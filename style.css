@@ -13,14 +13,14 @@
 }
 .sub-sub-nav-list {
 	position: absolute;
-	top: 124px;
-	left: 156px;
+	top: 126px;
+	left: 165px;
 	display: block;
 	width: 150px;
 }
 .sub-sub-sub-nav-list {
 	position: absolute;
-	top: 124px;
+	top: 126px;
 	left: 150px;
 	display: block;
 	width: 150px;
@@ -37,13 +37,9 @@
 	display: none;
 	background-color: orange;
 	padding: 20px;
+	width: 127px;
 }
-.sub-sub-list-item {
-	list-style-type: none;
-	display: none;
-	background-color: orange;
-	padding: 20;
-}
+.sub-sub-list-item,
 .sub-sub-sub-list-item {
 	list-style-type: none;
 	display: none;
@@ -54,25 +50,12 @@
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
-}
-.list-item:hover .sub-list-item {
-	display: block;
-}
-.list-item:hover {
-	background-color: red;
-}
-.sub-list-item:hover .sub-sub-list-item {
-	display: block;
-}
-.sub-list-item:hover {
-	background-color: red;
-}
+} 
+.list-item:hover .sub-list-item,
+.sub-list-item:hover .sub-sub-list-item,
 .sub-sub-list-item:hover .sub-sub-sub-list-item {
 	display: block;
-}
-.sub-sub-list-item:hover {
-	background-color: red;
-}
-.sub-sub-sub-list-item:hover {
+} 
+.nav-list li:hover {
 	background-color: red;
 }
