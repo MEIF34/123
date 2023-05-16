@@ -1,8 +1,27 @@
 p {
-	color: blue;
+	color: rgb(36, 17, 174);
+	font-size: 20px;
+	position: relative;
+	font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+p::first-line {
+	background-color: rgb(164, 43, 164);
+	color: rgb(0, 221, 255);
 }
 p::first-letter {
 	font-size: 40px;
-	color: red;
 	font-style: italic;
+	font-family: "Comic Sans MS", Comic Sans, cursive;
+}
+p::before {
+	content: '"';
+	position: absolute;
+	font-size: 40px;
+	color: rgb(164, 43, 164);
+}
+p::after {
+	content: '"';
+	position: absolute;
+	font-size: 40px;
+	color: rgb(164, 43, 164);
 }
