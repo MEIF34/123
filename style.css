@@ -1,22 +1,80 @@
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
-.container {
-	border: 4px solid grey;
+.card-container {
+	width: 35vw;
+	height: 95vh;
+	background-color: rgb(250, 236, 220);
+}
+.card {
+	font-size: 16px;
 	display: flex;
-	flex-direction: row-reverse;
-	min-height: 400px;
-	justify-content: start;
-	align-items: end;
+	height: 50%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
-.item {
-	width: 50px;
-	height: 50px;
-	background-color: teal;
-	color: white;
-	text-align: center;
-	font-size: 20px;
-	border: 2px solid red;
+.user-img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: -22%;
+}
+.links {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-around;
+	position: relative;
+	top: -120px;
+	border-top: 1px solid black;
+}
+.header {
+	height: 50%;
+	width: 100%;
+	background-image: url(./image/coffee.jpg);
+	background-size: cover;
+}
+.user-name {
+	font-size: 50px;
+}
+.user-dev {
+	color: grey;
+}
+.user {
+	margin-top: -25%;
+}
+.user-link {
+	margin-top: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 25px;
+	text-decoration: none;
+	color:black;
+}
+.before-after {
+	padding-left: 30px;
+	position: relative;
+	display: inline-block;
+}
+.before-after::before {
+	content: '';
+	background-color: black;
+	width: 1px;
+	height: 60px;
+	left: -40px;
+	position: absolute;
+}
+.before-after::after {
+	content: '';
+	background-color: black;
+	width: 1px;
+	height: 60px;
+	left: 140px;
+	position: absolute;
 }
