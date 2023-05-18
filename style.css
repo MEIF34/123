@@ -1,4 +1,87 @@
 * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.nav-container {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	background-color: lightblue;
+	font-size: 20px;
+	font-weight: bold;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.nav-list {
+	display: flex;
+	list-style-type: none;
+}
+.nav-item {
+	margin-right: 20px;
+}
+.link {
+	text-decoration: none;
+	color: black;
+}
+.link:hover {
+	border-bottom: 2px white dashed;
+}
+h1 {
+	/* width: 100%; */
+	text-align: center;
+	margin-top: 50px;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	justify-content: center;
+}
+.card {
+	width: 200px;
+	border: 2px solid grey;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card:hover {
+	border-color: orange;
+}
+.card img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.card-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.card-rating {
+	margin-bottom: 5px;
+}
+.card-price {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.add-to-cart {
+	background-color: rgb(33, 155, 33);
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+.add-to-cart:hover {
+	background-color: rgb(20, 90, 20);
+}
+/* * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -28,18 +111,18 @@
 	display: flex;
 	flex-direction: row;
 	width: 80%;
-	justify-content: space-around;
-	position: relative;
+	justify-content: space-around; */
+	/* position: relative;
 	top: -120px;
-	border-top: 1px solid black;
-}
+	border-top: 1px solid black; */
+/* }
 .header {
 	height: 50%;
 	width: 100%;
 	background-image: url(./image/coffee.jpg);
 	background-size: cover;
-}
-.user-name {
+} */
+/* .user-name {
 	font-size: 50px;
 }
 .user-dev {
@@ -77,4 +160,4 @@
 	height: 60px;
 	left: 140px;
 	position: absolute;
-}
+} */
