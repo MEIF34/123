@@ -1,119 +1,40 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Shop</title>
+		<title>Travel form</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<!-- <section class="card-container">
-			<h1 class="header"></h1>
-			<article class="card">
-				<img src="./image/3683.webp" alt="user avatar" class="user-img" />
-				<h2 class="user user-name">MEIF</h2>
-				<h3 class="user user-dev">full-stack js dp</h3>
-				<section class="links">
-					<div>
-						<a href="#">
-							<p class="user-link">323</p>
-							<span class="user-link">followers</span>
-						</a>
-					</div>
-					<div>
-						<a href="#">
-							<p class="user-link before-after">290</p>
-							<span class="user-link">following</span>
-						</a>
-					</div>
-					<div>
-						<a href="#">
-							<p class="user-link">22</p>
-							<span class="user-link">stories</span>
-						</a>
-					</div>
-				</section>
-			</article>
-		</section> -->
-		<div class="nav-container">
-			<nav>
-				<ul class="nav-list">
-					<li class="nav-item"><a class="link" href="#">Home</a></li>
-					<li class="nav-item"><a class="link" href="#">Shop</a></li>
-					<li class="nav-item"><a class="link" href="#">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-		<h1>Shop page</h1>
-		<section class="container">
-			<article class="card">
-				<img src="./image/3683.webp" alt="cup">
-				<h2 class="card-title">Cat</h2>
-				<p class="card-rating">Rating 4.5</p>
-				<p class="card-price">$10</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/coffee.jpg" alt="coffee">
-				<h2 class="card-title">Coffee</h2>
-				<p class="card-rating">Rating 3.2</p>
-				<p class="card-price">$1.5</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/cup.webp" alt="cup">
-				<h2 class="card-title">Cup</h2>
-				<p class="card-rating">Rating 4</p>
-				<p class="card-price">$5</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/sugar.jpeg" alt="sugar">
-				<h2 class="card-title">Sugar</h2>
-				<p class="card-rating">Rating 2.5</p>
-				<p class="card-price">$3.2</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/3683.webp" alt="cup">
-				<h2 class="card-title">Cat</h2>
-				<p class="card-rating">Rating 4.5</p>
-				<p class="card-price">$10</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/coffee.jpg" alt="coffee">
-				<h2 class="card-title">Coffee</h2>
-				<p class="card-rating">Rating 3.2</p>
-				<p class="card-price">$1.5</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/cup.webp" alt="cup">
-				<h2 class="card-title">Cup</h2>
-				<p class="card-rating">Rating 4</p>
-				<p class="card-price">$5</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/sugar.jpeg" alt="sugar">
-				<h2 class="card-title">Sugar</h2>
-				<p class="card-rating">Rating 2.5</p>
-				<p class="card-price">$3.2</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/cup.webp" alt="cup">
-				<h2 class="card-title">Cup</h2>
-				<p class="card-rating">Rating 4</p>
-				<p class="card-price">$5</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-			<article class="card">
-				<img src="./image/sugar.jpeg" alt="sugar">
-				<h2 class="card-title">Sugar</h2>
-				<p class="card-rating">Rating 2.5</p>
-				<p class="card-price">$3.2</p>
-				<button class="add-to-cart">Add to cart</button>
-			</article>
-		</section>
+		<form action="/test">
+			<h2>Travel reservation form</h2>
+			<h3>* denotes mandotory</h3>
+			<label for="name">Full name*:</label>
+			<input type="text" id="name" placeholder="FirstName LastName" required>
+			<label for="email">Email address*:</label>
+			<input type="email" id="email" placeholder="EMAIL_ADDRESS" required>
+			<label for="tour">Select Tour Package*:</label>
+			<select name="tour" id="tour" required>
+				<option value="goa">Goa</option>
+			</select>
+			<label for="date">Arrival date*:</label>
+			<input type="text" id="date" placeholder="m/d/y" required>
+			<label for="numb-pers">Number of person*:</label>
+			<input type="text" id="numb-pers" placeholder="UNKNOWN_TYPE" required>
+			<label>What would you want to avail?*</label>
+			<label for="board">
+				Boarding <input id="board" class="checkbox" type="checkbox" name="avail" id="avail">
+			</label>
+			<label for="food">
+				Fooding <input id="food" class="checkbox" type="checkbox" name="avail" id="avail"> 
+			</label>
+			<label for="ss">
+				Sight seeing <input id="ss" class="checkbox" type="checkbox" name="avail" id="avail">
+			</label>
+			<label for="coupon">Discout Coupon code:</label>
+			<input type="text" id="coupon" placeholder="UNKNOWN_TYPE">
+			<label>Terms and conditions*</label>
+			<div><label for="i-a"><input checked class="radio" id="i-a" type="radio" name="tac" required>I agree</label><label for="i-d"><input class="radio" type="radio" id="i-d" name="tac">I disagree</label></div>
+			<button>Complete reservation</button>
+		</form>
 	</body>
 </html>
